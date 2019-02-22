@@ -59,7 +59,8 @@
 <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
 
 <!-- Load our React component. -->
-<script src="/wp-content/themes/twentynineteen copy/js/react/like_button.js"></script>
+<script src="/wp-content/themes/twentynineteen copy/like_button.js"></script>
 
 </body>
 </html>
+
