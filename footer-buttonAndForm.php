@@ -46,20 +46,20 @@
 					?>
 				</nav><!-- .footer-navigation -->
 			<?php endif; ?>
-		</div><!-- .site-info -->
+	</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
-
 <!-- Load React. -->
 <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
 <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
 <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
 
 <!-- Load our React component. -->
-<script src="/wp-content/themes/twentynineteen copy/js/react/like_button.js"></script>
+<script src="/wp-content/themes/twentynineteen copy/like_button.js"></script>
+<script src="/wp-content/themes/twentynineteen copy/form_contact.js"></script>
 
 </body>
 </html>

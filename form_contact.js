@@ -10,48 +10,42 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 var e = React.createElement;
 
-var LikeButton = function (_React$Component) {
-  _inherits(LikeButton, _React$Component);
+var FormContact = function (_React$Component) {
+  _inherits(FormContact, _React$Component);
 
-  function LikeButton(props) {
-    _classCallCheck(this, LikeButton);
+  function FormContact(props) {
+    _classCallCheck(this, FormContact);
 
-    var _this = _possibleConstructorReturn(this, (LikeButton.__proto__ || Object.getPrototypeOf(LikeButton)).call(this, props));
+    var _this = _possibleConstructorReturn(this, (FormContact.__proto__ || Object.getPrototypeOf(FormContact)).call(this, props));
 
-    _this.state = { liked: false };
+    _this.state = {
+      name: '', // text input
+      email: '', // email input
+      message: '' // textarea input
+    };
     return _this;
   }
 
-  _createClass(LikeButton, [{
+  _createClass(FormContact, [{
     key: 'render',
     value: function render() {
-      var _this2 = this;
-
-      if (this.state.liked) {
-        return React.createElement(
-          'div',
-          null,
-          React.createElement(
-            'p',
-            null,
-            'You liked this.'
-          ),
-          React.createElement(
-            'p',
-            null,
-            'Wooooo!'
-          )
-        );
-      }
-
-      return e('button', { onClick: function onClick() {
-          return _this2.setState({ liked: true });
-        } }, 'Like Me!!');
+      return React.createElement(
+        'form',
+        { method: '', action: '/' },
+        React.createElement('input', { type: 'text' }),
+        React.createElement('input', { type: 'text' }),
+        React.createElement('textarea', null),
+        React.createElement(
+          'button',
+          { type: 'submit' },
+          'Send'
+        )
+      );
     }
   }]);
 
-  return LikeButton;
+  return FormContact;
 }(React.Component);
 
-var domContainer = document.querySelector('#like_button_container');
-ReactDOM.render(e(LikeButton), domContainer);
+var domContainer = document.querySelector('#contact_form_container');
+ReactDOM.render(e(FormContact), domContainer);

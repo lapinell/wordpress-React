@@ -1,6 +1,6 @@
 <?php
 /**
- * The page id 5 template file
+ * Template Name: Like Button Only
  *
  * This is the most generic template file in a WordPress theme
  * and one of the two required files for a theme (the other being style.css).
@@ -44,4 +44,4 @@ get_header();
 	</section><!-- .content-area -->
 
 <?php
-get_footer('react');
+get_footer('likeButton');
