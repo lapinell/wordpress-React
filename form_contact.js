@@ -8,7 +8,7 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var element = React.createElement;
+var e = React.createElement;
 
 var FormContact = function (_React$Component) {
   _inherits(FormContact, _React$Component);
@@ -46,3 +46,6 @@ var FormContact = function (_React$Component) {
 
   return FormContact;
 }(React.Component);
+
+var domContainer = document.querySelector('#contact_form_container');
+ReactDOM.render(e(FormContact), domContainer);

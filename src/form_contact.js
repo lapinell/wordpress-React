@@ -1,6 +1,6 @@
 'use strict'
 
-const element = React.createElement
+const e = React.createElement
 
 class FormContact extends React.Component {
   constructor(props) {
@@ -23,3 +23,6 @@ class FormContact extends React.Component {
     )
   }
 }
+
+const domContainer = document.querySelector('#contact_form_container')
+ReactDOM.render(e(FormContact), domContainer)
